@@ -13,8 +13,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/expenses",
-              "host": ["{{baseUrl}}"],
+              "raw": "{{https://splitwise-app-backend.onrender.com}}/expenses",
+              "host": ["{{https://splitwise-app-backend.onrender.com}}"],
               "path": ["expenses"]
             }
           }
@@ -40,8 +40,8 @@
               "options": { "raw": { "language": "json" } }
             },
             "url": {
-              "raw": "{{baseUrl}}/expenses",
-              "host": ["{{baseUrl}}"],
+              "raw": "{{https://splitwise-app-backend.onrender.com}}/expenses",
+              "host": ["{{https://splitwise-app-backend.onrender.com}}"],
               "path": ["expenses"]
             }
           }
@@ -67,8 +67,8 @@
               "options": { "raw": { "language": "json" } }
             },
             "url": {
-              "raw": "{{baseUrl}}/expenses",
-              "host": ["{{baseUrl}}"],
+              "raw": "{{https://splitwise-app-backend.onrender.com}}/expenses",
+              "host": ["{{https://splitwise-app-backend.onrender.com}}"],
               "path": ["expenses"]
             }
           }
@@ -94,8 +94,8 @@
               "options": { "raw": { "language": "json" } }
             },
             "url": {
-              "raw": "{{baseUrl}}/expenses",
-              "host": ["{{baseUrl}}"],
+              "raw": "{{https://splitwise-app-backend.onrender.com}}/expenses",
+              "host": ["{{https://splitwise-app-backend.onrender.com}}"],
               "path": ["expenses"]
             }
           }
@@ -121,8 +121,8 @@
               "options": { "raw": { "language": "json" } }
             },
             "url": {
-              "raw": "{{baseUrl}}/expenses",
-              "host": ["{{baseUrl}}"],
+              "raw": "{{https://splitwise-app-backend.onrender.com}}/expenses",
+              "host": ["{{https://splitwise-app-backend.onrender.com}}"],
               "path": ["expenses"]
             }
           }
@@ -148,8 +148,8 @@
               "options": { "raw": { "language": "json" } }
             },
             "url": {
-              "raw": "{{baseUrl}}/expenses",
-              "host": ["{{baseUrl}}"],
+              "raw": "{{https://splitwise-app-backend.onrender.com}}/expenses",
+              "host": ["{{https://splitwise-app-backend.onrender.com}}"],
               "path": ["expenses"]
             }
           }
@@ -175,8 +175,8 @@
               "options": { "raw": { "language": "json" } }
             },
             "url": {
-              "raw": "{{baseUrl}}/expenses/:id",
-              "host": ["{{baseUrl}}"],
+              "raw": "{{https://splitwise-app-backend.onrender.com}}/expenses/:id",
+              "host": ["{{https://splitwise-app-backend.onrender.com}}"],
               "path": ["expenses", ":id"]
             }
           }
@@ -187,8 +187,8 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/expenses/:id",
-              "host": ["{{baseUrl}}"],
+              "raw": "{{https://splitwise-app-backend.onrender.com}}/expenses/:id",
+              "host": ["{{https://splitwise-app-backend.onrender.com}}"],
               "path": ["expenses", ":id"]
             }
           }
@@ -213,8 +213,8 @@
               "options": { "raw": { "language": "json" } }
             },
             "url": {
-              "raw": "{{baseUrl}}/expenses",
-              "host": ["{{baseUrl}}"],
+              "raw": "{{https://splitwise-app-backend.onrender.com}}/expenses",
+              "host": ["{{https://splitwise-app-backend.onrender.com}}"],
               "path": ["expenses"]
             }
           }
@@ -239,8 +239,8 @@
               "options": { "raw": { "language": "json" } }
             },
             "url": {
-              "raw": "{{baseUrl}}/expenses",
-              "host": ["{{baseUrl}}"],
+              "raw": "{{https://splitwise-app-backend.onrender.com}}/expenses",
+              "host": ["{{https://splitwise-app-backend.onrender.com}}"],
               "path": ["expenses"]
             }
           }
@@ -264,8 +264,8 @@
               "options": { "raw": { "language": "json" } }
             },
             "url": {
-              "raw": "{{baseUrl}}/expenses",
-              "host": ["{{baseUrl}}"],
+              "raw": "{{https://splitwise-app-backend.onrender.com}}/expenses",
+              "host": ["{{https://splitwise-app-backend.onrender.com}}"],
               "path": ["expenses"]
             }
           }
@@ -285,8 +285,8 @@
               "options": { "raw": { "language": "json" } }
             },
             "url": {
-              "raw": "{{baseUrl}}/expenses/1234567890abcdef12345678",
-              "host": ["{{baseUrl}}"],
+              "raw": "{{https://splitwise-app-backend.onrender.com}}/expenses/1234567890abcdef12345678",
+              "host": ["{{https://splitwise-app-backend.onrender.com}}"],
               "path": ["expenses", "1234567890abcdef12345678"]
             }
           }
@@ -297,8 +297,8 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/expenses/1234567890abcdef12345678",
-              "host": ["{{baseUrl}}"],
+              "raw": "{{https://splitwise-app-backend.onrender.com}}/expenses/1234567890abcdef12345678",
+              "host": ["{{https://splitwise-app-backend.onrender.com}}"],
               "path": ["expenses", "1234567890abcdef12345678"]
             }
           }
@@ -314,8 +314,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/people",
-              "host": ["{{baseUrl}}"],
+              "raw": "{{https://splitwise-app-backend.onrender.com}}/people",
+              "host": ["{{https://splitwise-app-backend.onrender.com}}"],
               "path": ["people"]
             }
           }
@@ -326,8 +326,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/balances",
-              "host": ["{{baseUrl}}"],
+              "raw": "{{https://splitwise-app-backend.onrender.com}}/balances",
+              "host": ["{{https://splitwise-app-backend.onrender.com}}"],
               "path": ["balances"]
             }
           }
@@ -338,8 +338,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/settlements",
-              "host": ["{{baseUrl}}"],
+              "raw": "{{https://splitwise-app-backend.onrender.com}}/settlements",
+              "host": ["{{https://splitwise-app-backend.onrender.com}}"],
               "path": ["settlements"]
             }
           }
@@ -350,8 +350,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/balances",
-              "host": ["{{baseUrl}}"],
+              "raw": "{{https://splitwise-app-backend.onrender.com}}/balances",
+              "host": ["{{https://splitwise-app-backend.onrender.com}}"],
               "path": ["balances"]
             }
           }
@@ -361,7 +361,7 @@
   ],
   "variable": [
     {
-      "key": "baseUrl",
+      "key": "https://splitwise-app-backend.onrender.com",
       "value": "your_deployed_api_url"
     }
   ]
