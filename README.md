@@ -6,7 +6,7 @@ A MERN stack backend for splitting expenses among groups, with Google Pay-like s
 
 1. **Clone the Repository**
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/dhiraj1155/splitwise-app-backend.git
    cd expense-splitter-backend
    ```
 
