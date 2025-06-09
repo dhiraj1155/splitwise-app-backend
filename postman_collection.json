@@ -13,8 +13,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{https://splitwise-app-backend.onrender.com}}/expenses",
-              "host": ["{{https://splitwise-app-backend.onrender.com}}"],
+              "raw": "{{baseUrl}}/expenses",
+              "host": ["{{baseUrl}}"],
               "path": ["expenses"]
             }
           }
@@ -26,7 +26,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": JSON.stringify({
+              "raw": {
                 "amount": 600,
                 "description": "Dinner at restaurant",
                 "paid_by": "Shantanu",
@@ -36,12 +36,12 @@
                   { "person": "Sanket" },
                   { "person": "Om" }
                 ]
-              }),
+              },
               "options": { "raw": { "language": "json" } }
             },
             "url": {
-              "raw": "{{https://splitwise-app-backend.onrender.com}}/expenses",
-              "host": ["{{https://splitwise-app-backend.onrender.com}}"],
+              "raw": "{{baseUrl}}/expenses",
+              "host": ["{{baseUrl}}"],
               "path": ["expenses"]
             }
           }
@@ -53,7 +53,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": JSON.stringify({
+              "raw": {
                 "amount": 450,
                 "description": "Groceries",
                 "paid_by": "Sanket",
@@ -63,12 +63,12 @@
                   { "person": "Sanket", "amount": 150 },
                   { "person": "Om", "amount": 150 }
                 ]
-              }),
+              },
               "options": { "raw": { "language": "json" } }
             },
             "url": {
-              "raw": "{{https://splitwise-app-backend.onrender.com}}/expenses",
-              "host": ["{{https://splitwise-app-backend.onrender.com}}"],
+              "raw": "{{baseUrl}}/expenses",
+              "host": ["{{baseUrl}}"],
               "path": ["expenses"]
             }
           }
@@ -80,7 +80,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": JSON.stringify({
+              "raw": {
                 "amount": 300,
                 "description": "Petrol",
                 "paid_by": "Om",
@@ -90,12 +90,12 @@
                   { "person": "Sanket", "percentage": 33.33 },
                   { "person": "Om", "percentage": 33.34 }
                 ]
-              }),
+              },
               "options": { "raw": { "language": "json" } }
             },
             "url": {
-              "raw": "{{https://splitwise-app-backend.onrender.com}}/expenses",
-              "host": ["{{https://splitwise-app-backend.onrender.com}}"],
+              "raw": "{{baseUrl}}/expenses",
+              "host": ["{{baseUrl}}"],
               "path": ["expenses"]
             }
           }
@@ -107,7 +107,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": JSON.stringify({
+              "raw": {
                 "amount": 500,
                 "description": "Movie Tickets",
                 "paid_by": "Shantanu",
@@ -117,12 +117,12 @@
                   { "person": "Sanket" },
                   { "person": "Om" }
                 ]
-              }),
+              },
               "options": { "raw": { "language": "json" } }
             },
             "url": {
-              "raw": "{{https://splitwise-app-backend.onrender.com}}/expenses",
-              "host": ["{{https://splitwise-app-backend.onrender.com}}"],
+              "raw": "{{baseUrl}}/expenses",
+              "host": ["{{baseUrl}}"],
               "path": ["expenses"]
             }
           }
@@ -134,7 +134,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": JSON.stringify({
+              "raw": {
                 "amount": 280,
                 "description": "Pizza",
                 "paid_by": "Sanket",
@@ -144,12 +144,12 @@
                   { "person": "Sanket" },
                   { "person": "Om" }
                 ]
-              }),
+              },
               "options": { "raw": { "language": "json" } }
             },
             "url": {
-              "raw": "{{https://splitwise-app-backend.onrender.com}}/expenses",
-              "host": ["{{https://splitwise-app-backend.onrender.com}}"],
+              "raw": "{{baseUrl}}/expenses",
+              "host": ["{{baseUrl}}"],
               "path": ["expenses"]
             }
           }
@@ -161,7 +161,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": JSON.stringify({
+              "raw": {
                 "amount": 350,
                 "description": "Petrol",
                 "paid_by": "Om",
@@ -171,14 +171,15 @@
                   { "person": "Sanket", "percentage": 33.33 },
                   { "person": "Om", "percentage": 33.34 }
                 ]
-              }),
+              },
               "options": { "raw": { "language": "json" } }
             },
             "url": {
-              "raw": "{{https://splitwise-app-backend.onrender.com}}/expenses/:id",
-              "host": ["{{https://splitwise-app-backend.onrender.com}}"],
+              "raw": "{{baseUrl}}/expenses/:id",
+              "host": ["{{baseUrl}}"],
               "path": ["expenses", ":id"]
-            }
+            },
+            "description": "Replace :id with the actual expense ID from 'Add Expense - Petrol' response"
           }
         },
         {
@@ -187,10 +188,11 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "{{https://splitwise-app-backend.onrender.com}}/expenses/:id",
-              "host": ["{{https://splitwise-app-backend.onrender.com}}"],
+              "raw": "{{baseUrl}}/expenses/:id",
+              "host": ["{{baseUrl}}"],
               "path": ["expenses", ":id"]
-            }
+            },
+            "description": "Replace :id with the actual expense ID from 'Add Expense - Pizza' response"
           }
         },
         {
@@ -200,7 +202,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": JSON.stringify({
+              "raw": {
                 "amount": -100,
                 "description": "Invalid Expense",
                 "paid_by": "Shantanu",
@@ -209,12 +211,12 @@
                   { "person": "Shantanu" },
                   { "person": "Sanket" }
                 ]
-              }),
+              },
               "options": { "raw": { "language": "json" } }
             },
             "url": {
-              "raw": "{{https://splitwise-app-backend.onrender.com}}/expenses",
-              "host": ["{{https://splitwise-app-backend.onrender.com}}"],
+              "raw": "{{baseUrl}}/expenses",
+              "host": ["{{baseUrl}}"],
               "path": ["expenses"]
             }
           }
@@ -226,7 +228,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": JSON.stringify({
+              "raw": {
                 "amount": 100,
                 "description": "",
                 "paid_by": "Shantanu",
@@ -235,12 +237,12 @@
                   { "person": "Shantanu" },
                   { "person": "Sanket" }
                 ]
-              }),
+              },
               "options": { "raw": { "language": "json" } }
             },
             "url": {
-              "raw": "{{https://splitwise-app-backend.onrender.com}}/expenses",
-              "host": ["{{https://splitwise-app-backend.onrender.com}}"],
+              "raw": "{{baseUrl}}/expenses",
+              "host": ["{{baseUrl}}"],
               "path": ["expenses"]
             }
           }
@@ -252,7 +254,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": JSON.stringify({
+              "raw": {
                 "amount": 100,
                 "description": "Test",
                 "split_type": "EQUAL",
@@ -260,12 +262,12 @@
                   { "person": "Shantanu" },
                   { "person": "Sanket" }
                 ]
-              }),
+              },
               "options": { "raw": { "language": "json" } }
             },
             "url": {
-              "raw": "{{https://splitwise-app-backend.onrender.com}}/expenses",
-              "host": ["{{https://splitwise-app-backend.onrender.com}}"],
+              "raw": "{{baseUrl}}/expenses",
+              "host": ["{{baseUrl}}"],
               "path": ["expenses"]
             }
           }
@@ -277,16 +279,16 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": JSON.stringify({
+              "raw": {
                 "amount": 100,
                 "description": "Test",
                 "paid_by": "Shantanu"
-              }),
+              },
               "options": { "raw": { "language": "json" } }
             },
             "url": {
-              "raw": "{{https://splitwise-app-backend.onrender.com}}/expenses/1234567890abcdef12345678",
-              "host": ["{{https://splitwise-app-backend.onrender.com}}"],
+              "raw": "{{baseUrl}}/expenses/1234567890abcdef12345678",
+              "host": ["{{baseUrl}}"],
               "path": ["expenses", "1234567890abcdef12345678"]
             }
           }
@@ -297,8 +299,8 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "{{https://splitwise-app-backend.onrender.com}}/expenses/1234567890abcdef12345678",
-              "host": ["{{https://splitwise-app-backend.onrender.com}}"],
+              "raw": "{{baseUrl}}/expenses/1234567890abcdef12345678",
+              "host": ["{{baseUrl}}"],
               "path": ["expenses", "1234567890abcdef12345678"]
             }
           }
@@ -314,8 +316,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{https://splitwise-app-backend.onrender.com}}/people",
-              "host": ["{{https://splitwise-app-backend.onrender.com}}"],
+              "raw": "{{baseUrl}}/people",
+              "host": ["{{baseUrl}}"],
               "path": ["people"]
             }
           }
@@ -326,8 +328,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{https://splitwise-app-backend.onrender.com}}/balances",
-              "host": ["{{https://splitwise-app-backend.onrender.com}}"],
+              "raw": "{{baseUrl}}/balances",
+              "host": ["{{baseUrl}}"],
               "path": ["balances"]
             }
           }
@@ -338,8 +340,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{https://splitwise-app-backend.onrender.com}}/settlements",
-              "host": ["{{https://splitwise-app-backend.onrender.com}}"],
+              "raw": "{{baseUrl}}/settlements",
+              "host": ["{{baseUrl}}"],
               "path": ["settlements"]
             }
           }
@@ -350,8 +352,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{https://splitwise-app-backend.onrender.com}}/balances",
-              "host": ["{{https://splitwise-app-backend.onrender.com}}"],
+              "raw": "{{baseUrl}}/balances",
+              "host": ["{{baseUrl}}"],
               "path": ["balances"]
             }
           }
@@ -361,8 +363,8 @@
   ],
   "variable": [
     {
-      "key": "https://splitwise-app-backend.onrender.com",
-      "value": "your_deployed_api_url"
+      "key": "baseUrl",
+      "value": "https://splitwise-app-backend.onrender.com"
     }
   ]
 }
