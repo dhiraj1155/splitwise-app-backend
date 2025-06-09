@@ -77,7 +77,7 @@ A MERN stack backend for splitting expenses among groups, with Google Pay-like s
 4. Deploy and verify the provided URL
 
 ## Postman Collection
-Available at: [GitHub Gist URL](#) (replace with actual Gist URL after creation)
+Available at: https://gist.github.com/dhiraj1155/59c20635d5d9205197bbf3a2ba657d3a
 - Includes all endpoints with sample requests
 - Pre-populated with test data for Shantanu, Sanket, Om
 - Uses deployed API base URL
