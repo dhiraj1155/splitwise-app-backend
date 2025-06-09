@@ -1,0 +1,368 @@
+{
+  "info": {
+    "name": "Expense Splitter API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Expense Management",
+      "item": [
+        {
+          "name": "Get All Expenses",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/expenses",
+              "host": ["{{baseUrl}}"],
+              "path": ["expenses"]
+            }
+          }
+        },
+        {
+          "name": "Add Expense - Dinner",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": JSON.stringify({
+                "amount": 600,
+                "description": "Dinner at restaurant",
+                "paid_by": "Shantanu",
+                "split_type": "EQUAL",
+                "splits": [
+                  { "person": "Shantanu" },
+                  { "person": "Sanket" },
+                  { "person": "Om" }
+                ]
+              }),
+              "options": { "raw": { "language": "json" } }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/expenses",
+              "host": ["{{baseUrl}}"],
+              "path": ["expenses"]
+            }
+          }
+        },
+        {
+          "name": "Add Expense - Groceries",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": JSON.stringify({
+                "amount": 450,
+                "description": "Groceries",
+                "paid_by": "Sanket",
+                "split_type": "EXACT",
+                "splits": [
+                  { "person": "Shantanu", "amount": 150 },
+                  { "person": "Sanket", "amount": 150 },
+                  { "person": "Om", "amount": 150 }
+                ]
+              }),
+              "options": { "raw": { "language": "json" } }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/expenses",
+              "host": ["{{baseUrl}}"],
+              "path": ["expenses"]
+            }
+          }
+        },
+        {
+          "name": "Add Expense - Petrol",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": JSON.stringify({
+                "amount": 300,
+                "description": "Petrol",
+                "paid_by": "Om",
+                "split_type": "PERCENTAGE",
+                "splits": [
+                  { "person": "Shantanu", "percentage": 33.33 },
+                  { "person": "Sanket", "percentage": 33.33 },
+                  { "person": "Om", "percentage": 33.34 }
+                ]
+              }),
+              "options": { "raw": { "language": "json" } }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/expenses",
+              "host": ["{{baseUrl}}"],
+              "path": ["expenses"]
+            }
+          }
+        },
+        {
+          "name": "Add Expense - Movie Tickets",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": JSON.stringify({
+                "amount": 500,
+                "description": "Movie Tickets",
+                "paid_by": "Shantanu",
+                "split_type": "EQUAL",
+                "splits": [
+                  { "person": "Shantanu" },
+                  { "person": "Sanket" },
+                  { "person": "Om" }
+                ]
+              }),
+              "options": { "raw": { "language": "json" } }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/expenses",
+              "host": ["{{baseUrl}}"],
+              "path": ["expenses"]
+            }
+          }
+        },
+        {
+          "name": "Add Expense - Pizza",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": JSON.stringify({
+                "amount": 280,
+                "description": "Pizza",
+                "paid_by": "Sanket",
+                "split_type": "EQUAL",
+                "splits": [
+                  { "person": "Shantanu" },
+                  { "person": "Sanket" },
+                  { "person": "Om" }
+                ]
+              }),
+              "options": { "raw": { "language": "json" } }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/expenses",
+              "host": ["{{baseUrl}}"],
+              "path": ["expenses"]
+            }
+          }
+        },
+        {
+          "name": "Update Expense - Petrol",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": JSON.stringify({
+                "amount": 350,
+                "description": "Petrol",
+                "paid_by": "Om",
+                "split_type": "PERCENTAGE",
+                "splits": [
+                  { "person": "Shantanu", "percentage": 33.33 },
+                  { "person": "Sanket", "percentage": 33.33 },
+                  { "person": "Om", "percentage": 33.34 }
+                ]
+              }),
+              "options": { "raw": { "language": "json" } }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/expenses/:id",
+              "host": ["{{baseUrl}}"],
+              "path": ["expenses", ":id"]
+            }
+          }
+        },
+        {
+          "name": "Delete Expense - Pizza",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/expenses/:id",
+              "host": ["{{baseUrl}}"],
+              "path": ["expenses", ":id"]
+            }
+          }
+        },
+        {
+          "name": "Add Expense - Invalid Negative Amount",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": JSON.stringify({
+                "amount": -100,
+                "description": "Invalid Expense",
+                "paid_by": "Shantanu",
+                "split_type": "EQUAL",
+                "splits": [
+                  { "person": "Shantanu" },
+                  { "person": "Sanket" }
+                ]
+              }),
+              "options": { "raw": { "language": "json" } }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/expenses",
+              "host": ["{{baseUrl}}"],
+              "path": ["expenses"]
+            }
+          }
+        },
+        {
+          "name": "Add Expense - Invalid Empty Description",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": JSON.stringify({
+                "amount": 100,
+                "description": "",
+                "paid_by": "Shantanu",
+                "split_type": "EQUAL",
+                "splits": [
+                  { "person": "Shantanu" },
+                  { "person": "Sanket" }
+                ]
+              }),
+              "options": { "raw": { "language": "json" } }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/expenses",
+              "host": ["{{baseUrl}}"],
+              "path": ["expenses"]
+            }
+          }
+        },
+        {
+          "name": "Add Expense - Invalid Missing Paid By",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": JSON.stringify({
+                "amount": 100,
+                "description": "Test",
+                "split_type": "EQUAL",
+                "splits": [
+                  { "person": "Shantanu" },
+                  { "person": "Sanket" }
+                ]
+              }),
+              "options": { "raw": { "language": "json" } }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/expenses",
+              "host": ["{{baseUrl}}"],
+              "path": ["expenses"]
+            }
+          }
+        },
+        {
+          "name": "Update Non-existent Expense",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": JSON.stringify({
+                "amount": 100,
+                "description": "Test",
+                "paid_by": "Shantanu"
+              }),
+              "options": { "raw": { "language": "json" } }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/expenses/1234567890abcdef12345678",
+              "host": ["{{baseUrl}}"],
+              "path": ["expenses", "1234567890abcdef12345678"]
+            }
+          }
+        },
+        {
+          "name": "Delete Non-existent Expense",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/expenses/1234567890abcdef12345678",
+              "host": ["{{baseUrl}}"],
+              "path": ["expenses", "1234567890abcdef12345678"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Settlements & People",
+      "item": [
+        {
+          "name": "Get All People",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/people",
+              "host": ["{{baseUrl}}"],
+              "path": ["people"]
+            }
+          }
+        },
+        {
+          "name": "Get Current Balances",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/balances",
+              "host": ["{{baseUrl}}"],
+              "path": ["balances"]
+            }
+          }
+        },
+        {
+          "name": "Get Settlement Summary",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/settlements",
+              "host": ["{{baseUrl}}"],
+              "path": ["settlements"]
+            }
+          }
+        },
+        {
+          "name": "Get Balances - No Expenses",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/balances",
+              "host": ["{{baseUrl}}"],
+              "path": ["balances"]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "your_deployed_api_url"
+    }
+  ]
+}
